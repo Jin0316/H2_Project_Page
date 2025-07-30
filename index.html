@@ -169,19 +169,22 @@
         <div class="item has-text-centered">
           <img src="static/images/results_1.png" alt="Result 1">
           <h2 class="subtitle is-6 has-text-centered mt-2">
-            Visual overview of the proposed H<sup>2</sup> framework.
+            Comparison of classification accuracy (Acc, %) and parameter usage (Param, M) on task-incremental learning with large-scale and diverse datasets: ImageNet, CUBS, Stanford Cars, Flowers, Wikiart, and Sketch. 
+            H<sup>2</sup> achieves superior accuracy with significantly fewer parameters than existing methods.
           </h2>
         </div>
         <div class="item has-text-centered">
           <img src="static/images/results_2.png" alt="Result 2">
           <h2 class="subtitle is-6 has-text-centered mt-2">
-            Analysis of task-level association weights across learning steps.
+            Task-incremental and class-incremental results on Split MNIST and Split CIFAR-10. 
+            H<sup>2</sup> consistently outperforms strong baselines and approaches joint training performance without accessing previous task data.
           </h2>
         </div>
         <div class="item has-text-centered">
           <img src="static/images/results_3.png" alt="Result 3">
           <h2 class="subtitle is-6 has-text-centered mt-2">
-            Subnetwork selection results using Fisher Information sensitivity.
+            Ablation study results on Split CIFAR-10 under both task- and class-incremental scenarios. 
+            The effectiveness of the model search, sensitivity-based parameter selection, and contrastive loss is validated, with additional comparisons on parameter count, FLOPs, and memory usage for binary masks.
           </h2>
         </div>
       </div>
