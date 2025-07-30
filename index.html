@@ -107,7 +107,7 @@
   <div class="hero-body">
     <div class="container has-text-centered">
         <img src="static/images/main.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle subtitle-justified">
+        <div class="content has-text-justified">
           <p>
           An overview of our proposed H^2 framework, which selectively identifies helpful parameters from previous tasks through task-level model search and parameter-level sensitivity analysis, enabling optimal knowledge reuse while mitigating negative interference in continual learning.
           </p>
@@ -147,6 +147,12 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
+      <h2 class="subtitle has-text-centered">
+          We reformulate the forgetting problem as a task interference problem and propose H2 (Helpful or Harmful), a continual learning approach that selectively reuses only helpful knowledge from previous tasks. 
+          Our method first conducts a model search to identify cooperative old tasks at a coarse level, and then applies a sensitivity measure using Fisher Information to isolate crucial parameters at a fine level. 
+          This dual-stage strategy enables the construction of an optimal subnetwork for the current task, facilitating efficient knowledge reuse while suppressing interference.
+        </h2>
+      
         <img src="static/images/results_1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
