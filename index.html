@@ -147,10 +147,19 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
+
+      <!-- 설명 텍스트 -->
       <div class="content has-text-justified">
         <p>
-          We reformulate the forgetting problem as a task interference problem and propose H<sup>2</sup> (Helpful or Harmful), a continual learning approach that selectively reuses only helpful knowledge from previous tasks. 
-          Our method first conducts a model search to identify cooperative old tasks at a coarse level, and then applies a sensitivity measure using Fisher Information to isolate crucial parameters at a fine level. 
+          <strong>Motivation:</strong><br>
+          In continual learning, deep neural networks frequently encounter catastrophic forgetting when learning tasks sequentially, due to their limited capacity to preserve previously acquired knowledge.
+          While structural allocation strategies mitigate this by assigning disjoint parameter subsets per task, they often reuse prior parameters without evaluating their relevance, which may introduce negative interference and impair learning of the current task.
+        </p>
+
+        <p>
+          <strong>Proposed Method:</strong><br>
+          We reformulate the forgetting problem as a task interference problem and propose H<sup>2</sup> (Helpful or Harmful), a continual learning approach that selectively reuses only helpful knowledge from previous tasks.
+          Our method first conducts a model search to identify cooperative old tasks at a coarse level, and then applies a sensitivity measure using Fisher Information to isolate crucial parameters at a fine level.
           This dual-stage strategy enables the construction of an optimal subnetwork for the current task, facilitating efficient knowledge reuse while suppressing interference.
         </p>
       </div>
