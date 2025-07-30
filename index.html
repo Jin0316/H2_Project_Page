@@ -101,22 +101,24 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
   </div>
+</div>
+</div>
 </section>
-<!-- End teaser video -->
+<!-- End image carousel -->
+  
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -128,7 +130,12 @@
           <p>
             When optimizing sequentially incoming tasks, deep neural networks generally suffer from catastrophic forgetting due to their lack of ability to maintain knowledge from old tasks. 
             This may lead to a significant performance drop of the previously learned tasks. To alleviate this problem, studies on continual learning have been conducted as a countermeasure. 
-            Nevertheless, it suffers from an increase in computational cost due to the expansion of the network size or a change in knowledge that is favorably linked to previous tasks. In this work, we propose a novel approach to differentiate helpful and harmful information for old tasks using a model search to learn a current task effectively. Given a new task, the proposed method discovers an underlying association knowledge from old tasks, which can provide additional support in acquiring the new task knowledge. In addition, by introducing a sensitivity measure to the loss of the current task from the associated tasks, we find cooperative relations between tasks while alleviating harmful interference. We apply the proposed approach to both task- and class-incremental scenarios in continual learning, using a wide range of datasets from small to large scales. Experimental results show that the proposed method outperforms a large variety of continual learning approaches for the experiments while effectively alleviating catastrophic forgetting.
+            Nevertheless, it suffers from an increase in computational cost due to the expansion of the network size or a change in knowledge that is favorably linked to previous tasks. 
+            In this work, we propose a novel approach to differentiate helpful and harmful information for old tasks using a model search to learn a current task effectively. 
+            Given a new task, the proposed method discovers an underlying association knowledge from old tasks, which can provide additional support in acquiring the new task knowledge. 
+            In addition, by introducing a sensitivity measure to the loss of the current task from the associated tasks, we find cooperative relations between tasks while alleviating harmful interference. 
+            We apply the proposed approach to both task- and class-incremental scenarios in continual learning, using a wide range of datasets from small to large scales. 
+            Experimental results show that the proposed method outperforms a large variety of continual learning approaches for the experiments while effectively alleviating catastrophic forgetting.
           </p>
         </div>
       </div>
@@ -176,63 +183,6 @@
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
